@@ -31,15 +31,15 @@ var prom3 = getFile("file3");
 
 
 prom1
-.then(text1 => {
+.then(function(text1) {
 	output(text1);
 	return prom2;
 })
-.then(text2 => {
+.then(function(text2) {
 	output(text2);
 	return prom3;
 })
-.then(text3 => {
+.then(function(text3) {
 	output(text3);
 	output("Complete!");
 });
